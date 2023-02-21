@@ -10,13 +10,14 @@ import { AppDispatch } from '@/store';
 import { getExchanges } from '@/store/exchange';
 import { getCoins } from '@/store/coins';
 import Footer from "@/containers/Footer";
+import { DiscussionEmbed } from 'disqus-react';
 
 export default function Page() {
   const dispatch = useDispatch<AppDispatch>();
   const { language } = useParams();
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     dispatch(getCoins());
     dispatch(getExchanges());
@@ -49,6 +50,22 @@ export default function Page() {
       <Header />
       <EnhancedTable />
       <ControlledAccordions />
+      <div style={{
+        padding: '16px',
+        border: '1px solid #ccc',
+        background: '#fff',
+        margin: '8px'
+      }}>
+      <DiscussionEmbed
+        shortname='0xdeberin'
+        config={
+          {
+            url: 'https://0xdeberin.com',
+            identifier: '0x'
+          }
+        }
+      />
+      </div>
       <Footer />
     </div>
   );
