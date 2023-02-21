@@ -15,8 +15,8 @@ const resources = {
       question1: "What is this service?",
       question2: "How does it work?",
       question3: "What cryptocurrencies does the service scan?",
-      answer1: "It is a free service for intra-exchange cryptocurrency arbitrage. It looks for combinations of coin exchanges so that the end result is a profit.",
-      answer2: "Every second, we scan exchanges and build a cryptocurrency exchange route (from 2 to 4 transactions). We use a graph database for quick search. For the calculation, we take the lowest Ask price and the highest Bid price. The income is excluding exchange fees.",
+      answer1: "It’s a free service for intra-exchange cryptocurrency arbitrage. It searches combinations of coin exchanges that bring a profit at the end.",
+      answer2: "Every second we scan exchanges and build cryptocurrency exchange routes (from 2 to 4 transactions). We use a graph database for a quick search. For the calculation, we take the lowest Ask price and the highest Bid price. The income excludes exchange fees.",
       answer3: "The start and end cryptocurrencies are USDT by default. The path is built for all currencies traded on the spot market.",
       faqs: "FAQs",
       Donate: "Donate",
@@ -60,9 +60,9 @@ const resources = {
       question1: "Що це за сервіс?",
       question2: "Як це працює?",
       question3: "Які криптовалюти сканує сервіс?",
-      answer1: "Це безкоштовний сервіс для внутрішньо біржового арбітража криптовалюти. Він шукає комбінації обміну монет, щоб в кінцевій точці з’явився дохід.",
-      answer2: "Кожну секунду ми скануємо біржі і будуємо маршрут обміну криптовалюти (від 2 до 4 транзакцій). Для швидкого пошуку використовуємо графову базу даних. Для розрахунку беремо найнижчу Ask ціну, та найвижу Bid ціну. Дохід без урахування комісії біржі. ",
-      answer3: "Початковою та кінцевою криптовалютою, за замовчуванням, USDT. Шлях будується по всім валютам якими торгує біржа на спотовому ринку.",
+      answer1: "Це безкоштовний сервіс для внутрішньобіржового арбітражу криптовалюти. Він шукає такі комбінації обміну монет, які в кінцевій точці приносять прибуток.",
+      answer2: "Ми щосекундно скануємо біржі і будуємо маршрути обміну криптовалют (від 2 до 4 транзакцій). Для швидкого пошуку використовуємо графову базу даних. При розрахунку беремо найнижчу Ask ціну, та найвищу Bid ціну. Відсоток прибутку наводиться без урахування комісії біржі.",
+      answer3: "Початковою та кінцевою криптовалютою за замовчуванням є USDT. Шлях будується для всіх валют, якими торгує біржа на спотовому ринку.",
       faqs: "Поширені запитання",
       Donate: "Донат",
       DonateText: "Всі донати будуть перераховані на потреби Збройних Сил України",
@@ -105,7 +105,6 @@ i18n
     lng: "en", // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
     // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
     // if you're using a language detector, do not define the lng option
-
     interpolation: {
       escapeValue: false // react already safes from xss
     }
