@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { AppDispatch, useAppSelector } from '@/store';
 import { setPage, setRowsPerPage } from "@/store/paths";
+import Legend from "@/components/Legend";
 // import { AppDispatch } from "@/store";
 export const DEFAULT_PAGE = 0;
 export const DEFAULT_LIMIT = 20;
@@ -109,6 +110,7 @@ export default function Main() {
           <Grid item sm={12} md={open ? 9 : 12}>
             <MainTableWrapper>
               <Table />
+              <Legend />
             </MainTableWrapper>
           </Grid>
           <Grid item xs={12} sm={12} md={3} sx={{ display: open ? 'block' : 'none' }}>

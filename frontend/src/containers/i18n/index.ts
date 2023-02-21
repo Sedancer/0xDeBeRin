@@ -45,6 +45,9 @@ const resources = {
       'Site development': 'Front-end developer',
       'devOps': 'Linux System Administrator',
       'Questions and suggestions': 'Questions and suggestions',
+      newStatus: 'new scheme',
+      workStatus: 'the scheme works and is updated',
+      endStatus: 'it does not work',
     },
 
   },
@@ -83,11 +86,13 @@ const resources = {
       profitTooltip: 'Орієнтовний дохід у відсотках без урахування комісії біржі.',
       min_profitTooltip: 'Мінімальний дохід за період актуальності схеми.',
       max_profitTooltip: 'Максимальний дохід за період актуальності схеми.',
-     
       'Rows per page': 'Рядків на сторінці',
       'Site development': 'Розробка фронт-енду',
       'devOps': 'Системний адміністратор Linux',
       'Questions and suggestions': 'Питання та пропозиції',
+      newStatus: 'нова схема',
+      workStatus: 'схема працюе та оновлюється',
+      endStatus: 'не працює',
     }
   }
 };
