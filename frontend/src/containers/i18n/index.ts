@@ -1,9 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
 
 const resources = {
   en: {
@@ -48,8 +45,8 @@ const resources = {
       newStatus: 'new scheme',
       workStatus: 'the scheme works and is updated',
       endStatus: 'it does not work',
+      emptyDataText: 'No results Try adjusting your search by removing filters'
     },
-
   },
   uk: {
     translation: {
@@ -93,6 +90,7 @@ const resources = {
       newStatus: 'нова схема',
       workStatus: 'схема працюе та оновлюється',
       endStatus: 'не працює',
+      emptyDataText: 'Немає результатів Спробуйте налаштувати пошук, видаливши фільтри',
     }
   }
 };
@@ -111,4 +109,3 @@ i18n
   });
 
 export default i18n;
- 

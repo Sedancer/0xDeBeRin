@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 import { AppDispatch, useAppSelector } from '@/store';
 import { setPage, setRowsPerPage } from "@/store/paths";
 import Legend from "@/components/Legend";
-// import { AppDispatch } from "@/store";
+
 export const DEFAULT_PAGE = 0;
 export const DEFAULT_LIMIT = 20;
 export const DEFAULT_LIMITS = [DEFAULT_LIMIT, 50, 100];
@@ -45,6 +45,7 @@ const MainTableWrapper = styled('div')(
    background: #fff;
 `,
 );
+
 const MainFilterWrapper = styled('div')(
   () => `
   width: 100%;
@@ -58,7 +59,6 @@ const MainFilterWrapper = styled('div')(
   border-right: 1px solid  #ccc;
 `,
 );
-
 
 export default function Main() {
   const [open, setOpen] = useState(true);
@@ -94,17 +94,10 @@ export default function Main() {
           onRowsPerPageChange={handleChangeRowsPerPage}
           labelRowsPerPage={t('Rows per page')}
         />
-
-        <div>
-          <IconButton sx={{ display: { sm: 'none', md: 'block' } }} onClick={() => setOpen(!open)}>
-            {open ? <FilterListIcon /> : <ArrowBackIosIcon />}
-          </IconButton>
-        </div>
-
-
+        <IconButton sx={{ height: '40px', display: { sm: 'none', md: 'block' } }} onClick={() => setOpen(!open)}>
+          {open ? <FilterListIcon /> : <ArrowBackIosIcon />}
+        </IconButton>
       </MainHeader>
-
-
       <MainTableAndFilterWrapper>
         <Grid container>
           <Grid item sm={12} md={open ? 9 : 12}>
@@ -118,7 +111,6 @@ export default function Main() {
               <Filter />
             </MainFilterWrapper>
           </Grid>
-
         </Grid>
       </MainTableAndFilterWrapper>
     </MainWrapper>
