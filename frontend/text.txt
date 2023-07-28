@@ -1,0 +1,15 @@
+
+При наведении на ячейку в столбце Found in и Duration показываем подсказку (Created at 11.02.23 10:11:21
+  и Updated at 11.02.23 10:11:21) соответственно. В api/path есть эти поля.
+UPD: Для поля Found in показываем Created at: 11.02.23 10:11:21  для Duration  Updated at 11.02.23 10:11:21
+Если таблица пустая, то показывать сообщение “No results Try adjusting your search by removing filters” Вот прям так http://joxi.ru/VrwadG0HgdMxl2
+Фильтр добавить:
+Дохід: від - до
+Період datetime range picker
+
+
+Сортировку нужно делать не по названиям поля, а по тем что я дал created_at / updated_at / duration / exchange / profit / min_profit / max_profit
+А то сейчас ты пытаешся сортировать по FoundIN а у меня такого нет и он сортирует по дефолту.
+
+При сортировке URL не меняется, а по идеи должен
+Нужно переходить на web socket

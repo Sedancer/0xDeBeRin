@@ -166,8 +166,8 @@ export default function EnhancedTable() {
                 data?.map(({
                   found_in,
                   id,
-                  created_at,
-                  updated_at,
+                  created_at ='',
+                  updated_at ='',
                   duration,
                   exchange,
                   path,
