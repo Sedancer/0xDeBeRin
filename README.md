@@ -22,7 +22,7 @@
 
 ## 🖼️ Screenshot
 
-![0xDeBeRin Interface](assets/Screenshot.png)  
+![0xDeBeRin Interface](Screenshot.png)  
 *Example interface showing live exchange rate differences.*
 
 ## 🛠️ Technologies Used
